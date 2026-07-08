@@ -6,47 +6,185 @@
     <title>Aprendendo formulario</title>
   </head>
   <style>
-    body {
-      background-color: rgb(0, 0, 0);
-      color: aliceblue;
-    }
-    h1:hover {
-      color: rgb(0, 255, 8);
+
+  
+
+
       
-    }
-    input {
-      color: rgb(49, 99, 0);
-      border-radius: 30px;
-    }
+
   </style>
   <body>
     <h1>FORMULÁRIOS EM HTML</h1>
 
-    <form method="post">
-      <!--POST é fechado parda mais privada(viva a monogamia)-->
-      <!--/-->
-      <!--GET GERAL PODE VER E MEXER(basicamente um relacionamento aberto)-->
-      <label for="nome">Nome:</label>
+    <form method="post" action=""> <!--ele serve para enviar para algum lugar-->
+      <fieldset>
+        <legend>Login</legend>
+        <!--POST é fechado parda mais privada(viva a monogamia)-->
+        <!--/-->
+        <!--GET GERAL PODE VER E MEXER(basicamente um relacionamento aberto)-->
+        <label for="nome">Nome:</label>
 
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="        Digite seu nome"
+          required
+          minlength="5"
+          maxlength="25"
+        />
+        <!--REQUIEM VEM NENEM (OBRIGATORIO)- SÓ PARA LEMBRAM BB -->
+
+        <br />
+        <br />
+
+        <label for="senha">Senha:</label>
+
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="        Digite sua senha"
+          required
+        />
+      </fieldset>
+
+      <br />
+      <br />
+
+      <label for="tel">Telefone: </label>
       <input
-        type="text"
-        name="nome"
-        id="nome"
-        placeholder="        Digite seu nome"
+        type="tel"
+        name="tel"
+        id="tel"
+        placeholder="       Digite seu número"
         required
+        
       />
 
-      <br />
-      <br />
+      <br>
+      <br>
 
-      <label for="senha">Senha:</label>
-
+      <label for="tel">Idade: </label>
       <input
-        type="password"
-        name="senha"
-        id="senha"
-        placeholder="        Digite sua senha"
+        type="number"
+        name="idade"
+        id="idade"
+        placeholder="Informe sua idade"
+        required
+        min="12"
+        max="21"
+        
       />
+      <br />
+      <br />
+      
+      <!--Produtos Select-->
+      <fieldset>
+        <legend>Escolha um produto</legend>
+        <select name="category" id="input-category" required>
+          <option value="">Selecione...</option>
+          <option value="eletronicos">Eletrônicos</option>
+          <option value="moda">Moda</option>
+          <option value="games">Games</option>
+          <option value="beleza">Beleza</option>
+          <option value="comida">Comida</option>
+        </select>
+
+        <br />
+        <br />
+
+        
+      </fieldset>
+
+      <br />
+      <br />
+
+      <!--Radio-->
+      <fieldset>
+        <legend>Quem é você? (RADIO)</legend>
+        <input type="radio" name="client-type" id="radio-pf" value="pf" />
+
+        <label for="radio-pf">Pessoa Física</label>
+
+        <input type="radio" name="client-type" id="radio-pj" value="pj" />
+
+        <label for="radio-pj">Pessoa Jurídica </label>
+        <br />
+
+        <input type="radio" name="client-type" id="radio-pu" value="pu" />
+
+        <label for="radio-pu">Pessoa Unica </label>
+
+        <input type="radio" name="client-type" id="radio-pa" value="pa" />
+
+        <label for="radio-pa">Pessoa Alien </label>
+
+        <br />
+
+        <input type="radio" name="client-type" id="radio-pe" value="pe" />
+
+        <label for="radio-pe">Pessoa Esmeralda </label>
+
+        <input type="radio" name="client-type" id="radio-pl" value="pl" />
+
+        <label for="radio-pl">Pessoa Lobo </label>
+      </fieldset>
+     
+      <br>
+
+      <!--Checkbox-->
+      <fieldset>   
+        <legend>O que você prefere?(CHECKBOX)</legend>   
+        <input
+        type="checkbox"
+        name="preferences"
+        id="check-offers"
+        value="offers"
+      />
+
+      <label
+        for="check-offers"
+        >Receber ofertas</label
+      >
+      <input type="checkbox" name="preferences" id="check-news" value="news"/>
+
+      <label
+        for="check-news"
+        >Newsletter</label
+      >
+      <br>
+
+      <input type="checkbox" name="preferences" id="check-news" value="news" />
+
+      <label
+        for="check-news"
+        >Ler um livro
+      </label>
+
+      
+      <input type="checkbox" name="preferences" id="check-news" value="news" /> 
+
+      <label
+        for="check-news"
+        >Comer empadão </label>
+
+      </fieldset>
+
+      <h2>Botão comum</h2>  <!--Botão apenas para uma ação interna. Não encerra o formulario.-->
+
+      <input type="button" value="Mostrar Mensagem" onclick="alert('Enviado com sucesso')">
+
+      <h2>Botão submit</h2>
+
+       <!--é o botão padrão para "enviar" que o formulario possui ao final, ao clicar o navegador:
+      verifica se o formulario é valido
+      Se houver erro, exibe a mensagem da validação 
+      se estiver tudo correto, envia os dados.
+      -->
+
+      <input type="submit" value="Enviar">
+
     </form>
   </body>
 </html>

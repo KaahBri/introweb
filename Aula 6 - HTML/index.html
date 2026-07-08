@@ -6,21 +6,7 @@
     <title>Minha Loja</title>
   </head>
   <style>
-    body {
-      background-color: rgb(30, 59, 2);
-      color: aliceblue;
-      font-style: oblique;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    a {
-      color: rgb(0, 247, 127);
-    }
-    h1 {
-      font-size: 50px;
-    }
-    footer{
-        font-family: Arial, Helvetica, sans-serif;
-    }
+
   </style>
 
   <body>
@@ -36,7 +22,7 @@
       </nav>
     </header>
     <!--Corpo da página-->
-    <main  id="home">
+    <main id="home">
       <section class="products" id="produtos">
         <h2>produtos em destaque</h2>
         <article class="products">
@@ -52,36 +38,175 @@
 
           <!--Tabela de produtos-->
           <section class="product-list">
-           <h3>Lista de produtos</h3>
-          
-            <table border="10" >
-            <thead>
-              <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Categoria</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Fone</td>
-                <td>R$ 250,00</td>
-                <td>Eletrônico</td>
-              </tr>
-              <tr>
-                <td>Mouse</td>
-                <td>R$ 180,00</td>
-                <td>TI</td>
-              </tr>
-              <tr>
-                <td>Teclado</td>
-                <td>R$ 200,00</td>
-                <td>TI</td>
-              </tr>
-            </tbody>
-          </table>
-         </section>
-         <!--não usado-->
+            <h3>Lista de produtos</h3>
+
+            <table border="10">
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>Categoria</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Fone</td>
+                  <td>R$ 250,00</td>
+                  <td>Eletrônico</td>
+                </tr>
+                <tr>
+                  <td>Mouse</td>
+                  <td>R$ 180,00</td>
+                  <td>TI</td>
+                </tr>
+                <tr>
+                  <td>Teclado</td>
+                  <td>R$ 200,00</td>
+                  <td>TI</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <br />
+          <section class="area-login" id="contato">
+            <fieldset>
+            <h2>Cadastro / Contato</h2>
+            <form method="post" action="">
+              <fieldset>
+                <legend>Cadastro</legend>
+
+                <label for="nome">Nome: </label>
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  required
+                  minlength="3"
+                />
+                <br />
+                <br />
+
+                <label for="id">Idade</label>
+                <input type="number" name="id" id="id" min="18" max="120" />
+                <br />
+                <br />
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" />
+
+                <br />
+                <br />
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" />
+              </fieldset>
+              <br />
+              <fieldset>
+                <legend><h1>Preferencias</h1></legend>
+                <label for="sele">Escolha uma promoção: </label>
+                <select name="sele" id="sel">
+                  <option value="5of">5% OFF</option>
+                  <option value="10of">10% OFF</option>
+                  <option value="15of">15% OFF</option>
+                  <option value="20of">20% OFF</option>
+                  <option value="25of">25% OFF</option>
+                  <option value="30of">30% OFF</option>
+                  <option value="35of">35% OFF</option>
+                  <option value="40of">40% OFF</option>
+                  <option value="45of">45% OFF</option>
+                </select>
+
+                <h4>Categorias</h4>
+                <input
+                  type="checkbox"
+                  name="preferences"
+                  id="check-news"
+                  value="news"
+                />
+
+                <label for="check-news">Moda</label>
+
+                <input
+                  type="checkbox"
+                  name="preferences"
+                  id="blz"
+                  value="news"
+                />
+
+                <label for="blz">Beleza</label>
+
+                 <input
+                  type="checkbox"
+                  name="preferences"
+                  id="ele"
+                  value="news"
+                />
+              
+                <label for="ele">Eletrônicos</label>
+
+
+                <br>
+                <input
+                  type="checkbox"
+                  name="preferences"
+                  id="coz"
+                  value="news
+"
+                />
+                  
+                <label for="coz">Cozinha</label>
+
+                 <input
+                  type="checkbox"
+                  name="preferences"
+                  id="jojo"
+                  value="news"
+                />
+
+                <label for="jojo">Jogos</label>
+                
+                
+                
+                 <input
+                  type="checkbox"
+                  name="preferences"
+                  id="car"
+                  value="news"
+                />
+
+                <label for="car">Carros</label>
+
+
+                <h4>Tipo de Cliente</h4>
+
+                <input type="radio" name="client" id="radio-pf" value="pf" />
+
+                <label for="radio-pf">Pessoa Física</label>
+
+                <input type="radio" name="client" id="radio-pj" value="pj" />
+                  
+                <label for="radio-pj">Pessoa Juridica</label>  
+
+                 
+
+               
+                 
+                
+                <h4>Menssagem</h4>
+                <textarea  rows="3" cols="40"
+                maxlength="200"
+                placeholder="Observação"
+                > </textarea>
+                
+
+
+
+
+              </fieldset>
+              </fieldset>
+            </form>
+          </section>
+          <!--não usado-->
           <h3>notebook</h3>
           <p>o melhor do mundo (detalhes do notebook)</p>
         </article>
@@ -92,11 +217,6 @@
         </article>
       </section>
       <!--Os manos dos contatos-->
-      <section class="contact" id="contatos">
-        <h2>Contato</h2>
-        <p>oi@gmail.com</p>
-        <p>+55(21)99999-9999</p>
-      </section>
     </main>
     <footer class="footer">
       <p>Todos os direitos reservados</p>
