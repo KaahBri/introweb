@@ -1,0 +1,11 @@
+nav ul li{
+    /* display: block; - faz algo*/ 
+    /* display:inline; - faz outro algo*/
+
+    /* display: inline-block; - faz algo + algo*/
+
+    /* display: none; - apaga o mano vei*/
+
+    display: inline-block;
+    margin-left: 23px;
+}

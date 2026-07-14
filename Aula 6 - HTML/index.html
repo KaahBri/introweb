@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Loja</title>
+    <link rel="stylesheet" href="/css/StyleJalolo.css">
   </head>
-  <style>
-  </style>
+  <style></style>
 
   <body>
     <!--Cabeção da página-->
@@ -23,35 +23,164 @@
     <!--Corpo da página-->
     <main id="home">
       <section class="products" id="produtos">
-        <h2>produtos em destaque</h2>
-        <article class="products">
+        <!-- <h2>produtos em destaque</h2> -->
+        
           <!--Lista de categorias-->
 
-          <section class="img-guitarra">
-
+           <!-- <section class="img-guitarra">
             <figure>
-              <img src="/img/guitarraAzul.jpg" width="100" alt="Guitarra Azul">
+              <img
+                src="/img/guitarraAzul.jpg"
+                width="100"
+                alt="Guitarra Azul"
+              />
 
-              <img src="/img/guitarraPreta.jpg" width="70" alt="Guitarra Preta">
+              <img
+                src="/img/guitarraPreta.jpg"
+                width="70"
+                alt="Guitarra Preta"
+              />
 
-              <img src="/img/guitarraVermelha.jpg" width="70" alt="Guitarra Vermelha">
+              <img
+                src="/img/guitarraVermelha.jpg"
+                width="70"
+                alt="Guitarra Vermelha"
+              />
 
-              <img src="/img/BaixoPreto.webp" width="65" alt="Baixo Preço">
+              <img src="/img/BaixoPreto.webp" width="65" alt="Baixo Preço" />
 
-              <img src="/img/BaixoVermelho.webp" width="120" alt="Baixo Vermelho">
+              <img
+                src="/img/BaixoVermelho.webp"
+                width="120"
+                alt="Baixo Vermelho"
+              />
 
-              <img src="/img/Teclado.webp" width="200" alt="Teclado">
+              <img src="/img/Teclado.webp" width="200" alt="Teclado" />
 
-              <img src="/img/BaixoAzul.webp" width="70" alt="Baixo Azul">
+              <img src="/img/BaixoAzul.webp" width="70" alt="Baixo Azul" />
             </figure>
+          </section>  -->
 
-
-
-          </section>
+          <!-- Banner -->
         
+          <section class="banner" aria-label="Destaque principal">
+           
+            <h2>Promoções Imperdíveis</h2>
+          
+            <p>Os melhores produtos com os melhores preços!</p>
+            
+          </section>
 
-          <!--Tabela de produtos-->
-          <section class="product-list">
+          <!-- Produtos com imagem -->
+          
+          <section id="produtos">
+            
+            <h2 id="produto1">Nossos Produtos</h2>
+            
+            <article class="product-card" id="carrinho">
+              
+              <h3 id="produto2">Camisa magica usada pelo Harry potter</h3>
+              
+              <img src="/img/camisa.jpg" alt="Camisa branca" />
+              
+              <p>Camisa com alta tecnologia.</p>
+              
+            </article>
+            
+            <article class="product-card" id="car">
+              
+              <h3 id="produto3">IPHONE</h3>
+              
+              <img src="/img/iphone.jpg" alt="Iphone 17 laranja" /> 
+              <p>Iphone max pro pro premium max</p>
+              
+            </article>
+            
+          </section>
+          
+          <!-- Sobre -->
+          
+          <section id="sobre" class="about">
+            
+            <!-- Vídeo promocional -->
+            
+            <section class="promo-video">
+              
+              <h2>Conheça nossa loja</h2>
+              
+              <video controls width="300">
+                
+                <source src="img/video.mp4" type="video/mp4" />
+                 Seu navegador não suporta vídeo. 
+              </video>
+              
+            </section>
+            
+            <!-- Integração com iframe -->
+            
+            <section class="location">
+              
+              <h3>Nossa Localização</h3>
+              
+              <iframe
+                src="https://www.youtube.com/embed/a4cA0ET9DRY?si=WXRjD9ngmuBGpHN7"
+                width="300"
+                height="200"
+                
+                title="Vídeo externo"
+              >
+                
+              </iframe>
+              
+              <iframe
+                
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.5718551402415!2d-43.20067162297481!3d-22.909948079252946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b
+                9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e1!3m2!1spt-BR!2sbr!4v1776867085334!5m2!1spt-BR!2sbr"
+                
+                width="300"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                
+                referrerpolicy="no-referrer-when-downgrade"
+                width="300"
+                height="200"
+                title="Maps"
+              >
+                
+              </iframe>
+              
+            </section>
+            
+            <h2>Sobre a Loja</h2>
+            
+            <p>
+              Somos uma loja dedicada a oferecer produtos de qualidade com os
+              melhores preços.
+            </p>
+
+   
+          </section>
+          
+          <!-- Contato -->
+      
+          <section id="contato" class="contact">
+
+            <h2>Contato</h2>
+
+            <form aria-label="Formulário de contato">
+       <label for="nome">Nome:</label> 
+              <input type="text" id="nome" required /> 
+              <label for="email">Email:</label>
+              <input type="email" id="email" required /> 
+              <button type="submit">Enviar</button> 
+            </form>
+         
+          </section>
+      
+           <!--Tabela de produtos-->
+           <!--<section class="product-list">
             <h3>Lista de produtos</h3>
 
             <table border="10">
@@ -80,11 +209,10 @@
                 </tr>
               </tbody>
             </table>
-          </section>
+          </section> -->
 
-          <br />
+          <!-- <br />
           <section class="area-login" id="contato">
-          
             <h2>Cadastro / Contato</h2>
             <form method="post" action="">
               <fieldset>
@@ -149,28 +277,26 @@
 
                 <label for="blz">Beleza</label>
 
-                 <input
+                <input
                   type="checkbox"
                   name="preferences"
                   id="ele"
                   value="news"
                 />
-              
+
                 <label for="ele">Eletrônicos</label>
 
-
-                <br>
+                <br />
                 <input
                   type="checkbox"
                   name="preferences"
                   id="coz"
                   value="news"
-
                 />
-                  
+
                 <label for="coz">Cozinha</label>
 
-                 <input
+                <input
                   type="checkbox"
                   name="preferences"
                   id="jojo"
@@ -178,10 +304,8 @@
                 />
 
                 <label for="jojo">Jogos</label>
-                
-                
-                
-                 <input
+
+                <input
                   type="checkbox"
                   name="preferences"
                   id="car"
@@ -190,7 +314,6 @@
 
                 <label for="car">Carros</label>
 
-
                 <h4>Tipo de Cliente</h4>
 
                 <input type="radio" name="client" id="radio-pf" value="pf" />
@@ -198,29 +321,23 @@
                 <label for="radio-pf">Pessoa Física</label>
 
                 <input type="radio" name="client" id="radio-pj" value="pj" />
-                  
-                <label for="radio-pj">Pessoa Juridica</label>  
 
-                 
+                <label for="radio-pj">Pessoa Juridica</label>
 
-               
-                 
-                
                 <h4>Menssagem</h4>
-                <textarea  rows="3" cols="40"
-                maxlength="200"
-                placeholder="Observação"
-                > </textarea>
-                
-
-
-
-
+                <textarea
+                  rows="3"
+                  cols="40"
+                  maxlength="200"
+                  placeholder="Observação"
+                >
+                </textarea>
               </fieldset>
-              
             </form>
-          </section>
+          </section> -->
       
+      </section>
+    </main>
     <footer class="footer">
       <p>Todos os direitos reservados</p>
     </footer>

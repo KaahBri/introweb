@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: rgb(28, 46, 11);
+
+    font-family: Georgia;
+
+}
+#geral{
+    width: 900px;
+    margin: 30px auto;
+    background-color: rgb(54, 97, 11);
+}
+#bloco1, #bloco2{
+ border: 3px solid rgb(78, 172, 57);
+ padding: 20px;
+ margin-bottom: 30px;
+ background-color: rgb(7, 118, 5);
+}
+img{
+    width: 200px;
+    border: 3px solid rgb(58, 192, 58);
+}
+
+
+
+
+/* #img{
+ position: relative;
+
+}
+#img2{
+ position: relative;
+
+}
+#img3{
+ position: relative;
+
+}
+#img4{
+ position: relative;
+    
+} */

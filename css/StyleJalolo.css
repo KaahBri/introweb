@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header{
+    background-color: #1e90ff;
+    color:white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.banner{
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.nav-menu ul li{
+    /* display: inline-block;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 90px; */
+  
+    
+}
+.nav-menu{
+    margin: 5px 10px;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.products{
+
+
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-left: 9px;
+}
+.products-card{
+    background-color: white;
+    padding-left: 30px;
+    border: 1px solid #ddd;
+    text-align: center;   
+}
+
+
+img{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom:20px;
+}
+.products-card:hover{
+ transform: scale(1.03);
+}
+
+#carrinho{
+ background-color: #ffffff;
+ margin-bottom: 80px;
+}
+#produto1{
+
+    margin-bottom: 20px;
+
+}
+#produto2{
+ margin-left: 15px;
+ padding-top: 15px;
+}
+#produto3{
+ margin-left: 15px;
+ padding-top: 15px;
+}
+#car{
+    background-color: #ffffff;
+}
+p{
+ margin-left: 15px;
+ padding-bottom: 15px;
+}
+.footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
