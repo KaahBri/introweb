@@ -1,0 +1,55 @@
+/* ==========================================
+   ESTILOS VISUAIS (Não é necessário alterar)
+   ========================================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f9f9f9;
+}
+
+.box {
+  width: 300px; /*MUDEI DE 80 PARA 300*/
+  height: 80px;
+  background-color: #3498db; /* Azul */
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px; /* Centraliza o número dentro da caixa */
+  border-radius: 8px;
+  margin-bottom: 25px;
+  
+}
+
+.destaque {
+  background-color: #e74c3c; /* Vermelho */
+}
+
+/* ==========================================
+   ÁREA DE TRABALHO - ADICIONE O CSS AQUI
+   ========================================== */
+
+.container {
+    
+  background-color: #e0e0e0;
+  border: 3px dashed #7f8c8d;
+  padding: 10px;
+  height: 400px;
+  
+
+  /* Adicione suas propriedades flex aqui */
+  display: flex ;
+  gap: 16px; /*O espaço entre */
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; column reversa */
+  flex-wrap: wrap; /*Quebra de linha, redimenciona a largura do navegador*/
+
+
+}
+
+.box.destaque {
+  /* Adicione o código da Etapa 5 aqui */
+  order: -1; /*Muda a ordem */
+}

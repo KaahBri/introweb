@@ -11,9 +11,15 @@ body{
     font-family: Georgia;
 
 }
+h1{
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+}
 #geral{
-    width: 900px;
+    width: 650px;
     margin: 30px auto;
+    height: 2500px;
     background-color: rgb(54, 97, 11);
 }
 #bloco1, #bloco2{
@@ -27,8 +33,90 @@ img{
     border: 3px solid rgb(58, 192, 58);
 }
 
+/* Entendendo Position */
+/*Livro de The owl House*/
+#img{
+     position: static;  /*ignora os parametros de movimentração */
+     top: 100px; /*não funciona  */
+     left: 100px; /*não funciona  */
+}  
+ 
+
+/* Bolsa de the owl house */
+
+/* position relative - a posição do elemento é relativa a sua posição normal / original */
+
+/* obs: o espaço original ocupado continua ocupado mesmo após a movimentação. */
+
+#img3{
+    position: relative;
+    
+    left: 100px;
+    top: 100PX;
+}
+
+/* position absolute */
+
+/* elemento pai -> bloco1  */
+#bloco1{
+    position: relative;
+    
+}
+
+/* elemento filho -> img2  */
+/* bolsa */
+/* obs: o espaço original ocupado fica livre mesmo após a movimentação. */
+
+/* absolute - a posição do elemento é relativa ao seu elemento pai mais proximo que tenha position diferente de static */
 
 
+#img2{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+
+/* Position fixed */
+/* teclado */
+
+#img4{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+z-index  */
+
+
+/* vamos testar o z-index com os blocos 1 e 2 */
+
+#bloco1{
+    position: relative;
+
+}
+#bloco2{
+    position: relative;
+    top: -120px;
+    left: 120px;
+}
+
+/*Agora sim vamos conhecer o z-index*/
+#bloco1{
+
+    z-index: 2;
+
+}
+#bloco2{
+
+    z-index: 1;
+}
 
 /* #img{
  position: relative;
